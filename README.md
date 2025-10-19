@@ -1,16 +1,53 @@
-## Hi there 👋
 
-<!--
-**Santhoshlk/Santhoshlk** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
+# 👋 Hey there, I'm Santhosh Lukka
 
-Here are some ideas to get you started:
+🎮 *Game Developer | C++ Programmer | Unreal Engine Enthusiast*  
+💻 Passionate about creating cinematic, AAA-style experiences in Unreal Engine.  
+🎯 Currently building my dream game — Ashes Beyond the Grave.
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+---
+
+## 🚀 About Me
+- 🧠 Learning *Unreal Engine 5 (C++ + Blueprints)* and *AI/ML (Python)*
+- 💪 Skilled in *Gameplay Systems, Animation, Procedural Design, and UI*
+- 🌍 Exploring *Environment Art* with Gaea, Blender, and Maya
+- 🔥 Committed to mastering *GAS, ALS, and advanced combat mechanics*
+
+---
+
+## 🛠 Tech Stack
+*Languages:* C++, Python, C, Java, HTML/CSS  
+*Game Dev:* Unreal Engine 5, Blueprints, MetaSounds, Niagara  
+*3D Tools:* Blender, Maya, Gaea  
+*Version Control:* Git, GitHub, JetBrains Rider  
+*Other Tools:* Photoshop, Figma, VS Code  
+
+---
+
+## 🕹 Featured Projects
+### 🐉 [Ashes Beyond the Grave](https://github.com/Santhoshlk/AshesBeyondTheGrave)
+> Story-driven action RPG inspired by Black Myth: Wukong and Sekiro.
+- Advanced locomotion, IK, and blend space systems  
+- Procedural dungeon generation and dynamic camera mechanics  
+- Fully built in Unreal Engine C++
+
+### ⚔ [GameImplementation 5.6](https://github.com/Santhoshlk/GameImplementation)
+> Core gameplay prototypes and combat experiments  
+- Enhanced input, weapon logic, and movement systems
+
+---
+
+## 📈 GitHub Stats
+![GitHub Stats](https://github-readme-stats.vercel.app/api?username=Santhoshlk&show_icons=true&theme=radical)
+![Top Langs](https://github-readme-stats.vercel.app/api/top-langs/?username=Santhoshlk&layout=compact&theme=radical)
+
+---
+
+## 📫 Connect With Me
+📧 *Email:* lukksanthosh@gmail.com
+
+
+![Typing SVG](https://readme-typing-svg.herokuapp.com?size=25&color=F75C7E&lines=Game+Developer;C%2B%2B+Programmer;Unreal+Engine+Enthusiast)
+
+[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Santhoshlk&theme=radical)](https://git.io/streak-stats)
+
