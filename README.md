@@ -1,7 +1,7 @@
 
 # 👋 Hey there, I'm Santhosh Lukka
 
-🎮 *Game Developer | C++ Programmer | Unreal Engine Enthusiast*  
+🎮 *Game Developer | C++ Programmer | Unreal Engine Enthusiast | AI ML Enthusiast* 
 💻 Passionate about creating cinematic, AAA-style experiences in Unreal Engine.  
 🎯 Currently building my dream game — Ashes Beyond the Grave.
 
