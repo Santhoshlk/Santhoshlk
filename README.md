@@ -47,7 +47,5 @@
 📧 *Email:* lukksanthosh@gmail.com
 
 
-![Typing SVG](https://readme-typing-svg.herokuapp.com?size=25&color=F75C7E&lines=Game+Developer;C%2B%2B+Programmer;Unreal+Engine+Enthusiast)
 
-[![GitHub Streak](https://github-readme-streak-stats.herokuapp.com?user=Santhoshlk&theme=radical)](https://git.io/streak-stats)
 
