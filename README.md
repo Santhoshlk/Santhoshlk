@@ -168,10 +168,6 @@ A full **Gameplay Ability System** action-RPG combat framework in UE5 C++. Every
 ## 📊 GitHub Stats
 
 <p align="center">
-  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Santhoshlk&show_icons=true&theme=radical&hide_border=true&count_private=true"/>
-  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Santhoshlk&layout=compact&theme=radical&hide_border=true"/>
-</p>
-<p align="center">
   <img src="https://streak-stats.demolab.com?user=Santhoshlk&theme=radical&hide_border=true"/>
 </p>
 
