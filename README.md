@@ -98,14 +98,14 @@ A full **Gameplay Ability System** action-RPG combat framework in UE5 C++. Every
 
 ---
 
-## 🗂️ More Projects
+## 🗂️ Projects at a Glance
 
-| | Project | What it is |
-|:-:|:--|:--|
-| 🔦 | **Umbra** <!-- add repo link --> | My OpenGL renderer — tagged single-file shader parser, compile + link error handling, GL 4.5 DSA indexed drawing, abstraction layer, ImGui. Lighting and shadow maps in progress |
-| 🕯️ | [**Ashes Beyond the Grave**](https://github.com/Santhoshlk/AshesBeyondTheGrave) | Foundation UE5 C++ project — light-attack combos, weapon collision, custom ASC with input-tag activation, native Behavior Trees. Where the fundamentals were forged |
-| 🧠 | [**CppAdvancedLearning**](https://github.com/Santhoshlk/CppAdvancedLearning) | Systems C++ — memory semantics and concurrency, written and tested by hand |
-| 📖 | [**kingC**](https://github.com/Santhoshlk/kingC) | C from the ground up via K.N. King, feeding into a software renderer |
+| | Project | Built with | What it is | Status |
+|:-:|:--|:--|:--|:-:|
+| ⚔️ | [**CombatLearning**](https://github.com/Santhoshlk/CombatLearning) | `UE5` `C++` `GAS` | Soulslike action-RPG combat framework — three boss fights with phase transitions, parry & posture, custom climbing on the CMC, EQS + native BT enemy AI, zero-polling event-driven UI | ![](https://img.shields.io/badge/-Shipped-2ea44f?style=flat-square) |
+| 🔦 | **Umbra** <!-- add repo link --> | `C++` `OpenGL 4.5` `GLSL` | My OpenGL renderer — tagged single-file shader parser, compile + link error reporting, DSA indexed drawing, its own abstraction layer, ImGui tooling. Lighting & shadow maps underway | ![](https://img.shields.io/badge/-Active-e9a21f?style=flat-square) |
+| 🧠 | [**CppAdvancedLearning**](https://github.com/Santhoshlk/CppAdvancedLearning) | `C++20` | Systems C++ — memory semantics, threads, locks, condition variables, futures & promises, every example written and tested by hand | ![](https://img.shields.io/badge/-Complete-2f5bea?style=flat-square) |
+| 📖 | [**kingC**](https://github.com/Santhoshlk/kingC) | `C` | C from the ground up via K.N. King — pointers, strings, structs, preprocessor — the groundwork for a software rasterizer | ![](https://img.shields.io/badge/-Ongoing-e9a21f?style=flat-square) |
 
 ---
 
