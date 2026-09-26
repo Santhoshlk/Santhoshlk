@@ -1,98 +1,188 @@
-⚔️ Santhosh Lukka 🔱 Unreal Engine 5 C++ Developer | Gameplay Programmer 🩸 Building AAA-grade combat, traversal, and AI systems from scratch — 500+ commits deep.
+<!-- ═══════════════════════════ HEADER ═══════════════════════════ -->
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:0d0d0d,50:3b0a0a,100:8b0000&height=210&section=header&text=Santhosh%20Lukka&fontSize=58&fontColor=f5f5f5&fontAlignY=36&desc=UE5%20C%2B%2B%20Engineer%20%E2%9F%A1%20Real-Time%20Rendering&descAlignY=58&descSize=18&animation=fadeIn" width="100%"/>
+</p>
 
-💀 About Me
+<p align="center">
+  <a href="https://github.com/Santhoshlk">
+    <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=20&duration=3200&pause=900&color=C0392B&center=true&vCenter=true&width=620&lines=%E2%9A%94%EF%B8%8F+GAS+combat+%26+soulslike+boss+fights;%F0%9F%94%A6+OpenGL+renderer+built+from+the+ground+up;%F0%9F%A7%97+Custom+climbing+on+the+Character+Movement+Component;%F0%9F%A9%B8+550%2B+commits.+Every+line+typed+by+hand." alt="typing banner"/>
+  </a>
+</p>
 
-3rd year CSE student at MANIT Bhopal, on a self-directed path to becoming a Gameplay Programmer at AAA studios.
+<p align="center">
+  <img src="https://img.shields.io/badge/Unreal_Engine_5-0E1128?style=for-the-badge&logo=unrealengine&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C++-00599C?style=for-the-badge&logo=cplusplus&logoColor=white"/>
+  <img src="https://img.shields.io/badge/OpenGL_4.5-5586A4?style=for-the-badge&logo=opengl&logoColor=white"/>
+  <img src="https://img.shields.io/badge/C-A8B9CC?style=for-the-badge&logo=c&logoColor=black"/>
+  <img src="https://img.shields.io/badge/GLSL-8B0000?style=for-the-badge"/>
+</p>
 
-My work is engine-level, architecture-first C++ — not surface-level Blueprint scripting. I build systems the way studios actually build them: data-driven, event-driven, ownership-conscious.
+---
 
-🎯 Long-term: AAA studio (Rockstar / Ubisoft / Larian) → DigiPen MSCS → international studio → my own 3D game studio.
+## 💀 About Me
 
-🗡️ Projects
-⚔️ CombatLearning — Flagship
+```cpp
+struct SanthoshLukka
+{
+    const char* Role     = "3rd-year CSE @ MANIT Bhopal";
+    const char* Path     = "Self-directed: UE5 production C++  +  real-time rendering";
+    const char* Style    = "Architecture-first. Data-driven. Event-driven. Ownership-conscious.";
+    const char* NotThis  = "Surface-level Blueprint scripting";
+    int         Commits  = 550; // and climbing
+};
+```
 
-A full GAS Action RPG combat framework in UE5 C++. 450+ commits. Every system built from scratch.
+> 🔱 **The goal:** an Unreal developer who understands the GPU all the way down.
+>
+> 🎯 **Long-term:** AAA studio (Rockstar / Ubisoft / Larian) ➜ **DigiPen MSCS** ➜ international studio ➜ **my own 3D game studio**
 
-Combat & Abilities
+---
 
-Full damage pipeline — GameplayEffectSpecHandle with curve-based damage scaling
-Directional hit-react system
-Ability cooldown system with UI integration
-Hero special abilities with data-driven ability info (icons, tags, input bindings)
-Block / counter system, target lock-on
-Posture & rage systems — rage invincibility via ActivationBlockedTags
-Motion warping integrated into combat
-Weapon-socket-driven hit VFX pipeline via GameplayCueNotify_Static + Niagara parameters
+## ⚔️ Flagship — CombatLearning
 
-Traversal & Locomotion
+<p>
+  <a href="https://github.com/Santhoshlk/CombatLearning"><img src="https://img.shields.io/badge/REPO-CombatLearning-8B0000?style=flat-square&logo=github"/></a>
+  <img src="https://img.shields.io/badge/commits-300%2B-C0392B?style=flat-square"/>
+  <img src="https://img.shields.io/badge/GAS-Action_RPG-0E1128?style=flat-square&logo=unrealengine"/>
+</p>
 
-Custom climbing movement mode built on UCharacterMovementComponent — surface-normal snapping, cross-product-derived wall-space movement axes, dot-product exit detection
-Direction-agnostic hop system — single generic probe function covering all four directions, dot-product classification, motion-warped traversal to traced impact points
-Procedural hand/foot IK through Control Rig — per-effector hit gating with offset reset, no stale-target artifacts
+A full **Gameplay Ability System** action-RPG combat framework in UE5 C++. Every system built by hand.
 
-Enemy AI & Boss Fights
+<table>
+<tr>
+<td width="50%" valign="top">
 
-🔥 Three complete boss fights — Glacier Mage, Guardian, and Frost Giant with full phase transitions, hand-tuned for soulslike aggression
-EQS-driven enemy positioning and decision-making
-Custom native BTTasks, BTServices, and BTDecorators
-Async enemy spawning pipeline
+### 🗡️ Combat & Abilities
+- Damage pipeline — `GameplayEffectSpecHandle` + curve-based scaling
+- Directional hit-react system
+- Cooldowns wired into the UI
+- Hero specials with data-driven ability info *(icons, tags, input)*
+- Block / counter / parry + target lock-on
+- Posture & rage — rage invincibility via `ActivationBlockedTags`
+- Motion warping woven into combat
+- Socket-driven hit VFX via `GameplayCueNotify_Static` + Niagara params
 
-Architecture
+</td>
+<td width="50%" valign="top">
 
-Event-driven UI — attribute changes pushed from PostGameplayEffectExecute through a UI component via interfaces and TWeakObjectPtr, zero polling
-Data-driven inventory system built as a standalone plugin
-Interface-driven death and interaction pipelines
+### 🧗 Traversal & Locomotion
+- Custom climbing movement mode on `UCharacterMovementComponent`
+  - surface-normal snapping
+  - cross-product wall-space axes
+  - dot-product exit detection
+- Direction-agnostic hop — one generic probe for all four directions, motion-warped to traced impact points
+- Procedural hand/foot IK in Control Rig — per-effector hit gating, no stale targets
 
-🔗 https://github.com/Santhoshlk/CombatLearning
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
 
-🕯️ Ashes Beyond the Grave — Foundation Project
+### 🔥 Enemy AI & Bosses
+- **Three full boss fights** — ❄️ Glacier Mage · 🛡️ Guardian · 🧊 Frost Giant, with phase transitions tuned for soulslike aggression
+- EQS-driven positioning and decisions
+- Native C++ `BTTask` / `BTService` / `BTDecorator`
+- Async enemy spawning pipeline
 
-My first UE5 C++ project — third-person action combat foundations: light attack combos, weapon collision handling, custom ASC setup with input-tag-driven activation, and native Behavior Tree architecture. The project where the fundamentals were forged.
+</td>
+<td width="50%" valign="top">
 
-🔗 https://github.com/Santhoshlk/AshesBeyondTheGrave
+### 🏛️ Architecture
+- Event-driven UI — attributes pushed from `PostGameplayEffectExecute` through interfaces + `TWeakObjectPtr`, **zero polling**
+- Data-driven inventory built as a standalone plugin
+- Interface-driven death & interaction pipelines
 
-🧠 CppAdvancedLearning
+</td>
+</tr>
+</table>
 
-Systems C++ study repo — advanced memory semantics and concurrency, written and tested by hand rather than read.
+---
 
-🔗 https://github.com/Santhoshlk/CppAdvancedLearning
+## 🗂️ More Projects
 
-📖 kingC
+| | Project | What it is |
+|:-:|:--|:--|
+| 🔦 | **Umbra** <!-- add repo link --> | My OpenGL renderer — tagged single-file shader parser, compile + link error handling, GL 4.5 DSA indexed drawing, abstraction layer, ImGui. Lighting and shadow maps in progress |
+| 🕯️ | [**Ashes Beyond the Grave**](https://github.com/Santhoshlk/AshesBeyondTheGrave) | Foundation UE5 C++ project — light-attack combos, weapon collision, custom ASC with input-tag activation, native Behavior Trees. Where the fundamentals were forged |
+| 🧠 | [**CppAdvancedLearning**](https://github.com/Santhoshlk/CppAdvancedLearning) | Systems C++ — memory semantics and concurrency, written and tested by hand |
+| 📖 | [**kingC**](https://github.com/Santhoshlk/kingC) | C from the ground up via K.N. King, feeding into a software renderer |
 
-C from the ground up via K.N. King, building toward a from-scratch software renderer.
+---
 
-🔗 https://github.com/Santhoshlk/kingC
+## ⚡ Tech Stack
 
-⚡ Tech Stack
+<table>
+<tr><td><b>🎮 Engine</b></td><td>
 
-Engine: Unreal Engine 5 (C++ primary)
+`GAS` — custom GE Executions, AttributeSets, ASC architecture  
+`CMC` — custom movement modes  
+`Control Rig` · `Full Body IK` · `Motion Warping` · `Linked Anim Layers`  
+`Enhanced Input` · `Gameplay Tags` · `CommonUI`  
+`Behavior Trees` · `EQS` · `Blackboards` — native C++ AI  
+`Niagara` · `MetaSounds`
 
-Gameplay Ability System — custom GEExecutions, AttributeSets, ASC architecture
-Custom movement modes via UCharacterMovementComponent extension
-Control Rig, Full Body IK, procedural animation
-Enhanced Input + Gameplay Tags
-Behavior Trees, EQS, Blackboards — native C++ AI
-Animation Blueprints, Linked Anim Layers, Motion Warping
-Niagara VFX, MetaSounds
+</td></tr>
+<tr><td><b>🔦 Graphics</b></td><td>
 
-Languages: C++ (primary) · C
+`OpenGL 4.5` · `GLSL` · `GLFW` · `GLEW` · `GLM` · `ImGui`
 
-Concurrency: std::thread / jthread, mutexes and lock types, condition variables, futures and promises
+</td></tr>
+<tr><td><b>🧵 Systems</b></td><td>
 
-IDEs: JetBrains Rider (Unreal) · Visual Studio 2026 (C++) · CLion (C)
+`std::thread` / `jthread` · mutexes & lock types · condition variables · futures & promises
 
-🎯 Current Focus
-⚔️ Climbing & traversal systems — Vince Petrelli's advanced course, complete
-🧵 C++ Concurrency — threading, synchronisation primitives, futures
-🛠️ Udacity C++ Nanodegree — project track
-📐 Math for game developers — Freya Holmér's series, applied in Unreal
+</td></tr>
+<tr><td><b>🛠️ Tools</b></td><td>
 
-🗺️ Up next: rendering arc — shaders, OpenGL, and a software renderer from scratch. Then Squad AI: an original squad-based tactical AI project.
+<img src="https://img.shields.io/badge/Rider-000000?style=flat-square&logo=rider&logoColor=white"/>
+<img src="https://img.shields.io/badge/Visual_Studio_2026-5C2D91?style=flat-square"/>
+<img src="https://img.shields.io/badge/CLion-000000?style=flat-square&logo=clion&logoColor=white"/>
+<img src="https://img.shields.io/badge/Git-F05032?style=flat-square&logo=git&logoColor=white"/>
 
-📊 GitHub Stats
+</td></tr>
+</table>
 
-Show Image Show Image
+---
 
-📫 Connect
+## 🎯 Current Focus
 
-📧 lukksanthosh@gmail.com
+| | Track | Now |
+|:-:|:--|:--|
+| 🔦 | **Rendering** | Umbra — Cherno's OpenGL series + Ben Cook + LearnOpenGL: batch rendering, every lighting type, omnidirectional shadow maps |
+| 🖼️ | **Unreal UI** | CommonUI — Vince Petrelli's Advanced Frontend UI: widget stacks, a GameInstance UI subsystem, options tabs, input routing |
+
+✅ **Recently wrapped:** Vince Petrelli's climbing & traversal course · C++ concurrency block
+
+## 🗺️ Up Next
+
+```
+🧊 Voxel terrain renderer ──► 🕹️ Pikuma 2D game engine (ECS + Lua)
+                           └─► 🔺 3D software renderer in C
+                                        │
+                                        ▼
+            ⚙️ Hazel engine ──► 🧠 Squad AI ──► 🌐 Multiplayer GAS
+```
+
+---
+
+## 📊 GitHub Stats
+
+<p align="center">
+  <img height="170" src="https://github-readme-stats.vercel.app/api?username=Santhoshlk&show_icons=true&theme=radical&hide_border=true&count_private=true"/>
+  <img height="170" src="https://github-readme-stats.vercel.app/api/top-langs/?username=Santhoshlk&layout=compact&theme=radical&hide_border=true"/>
+</p>
+<p align="center">
+  <img src="https://streak-stats.demolab.com?user=Santhoshlk&theme=radical&hide_border=true"/>
+</p>
+
+---
+
+## 📫 Connect
+
+<p align="center">
+  <a href="mailto:lukksanthosh@gmail.com"><img src="https://img.shields.io/badge/Email-lukksanthosh@gmail.com-8B0000?style=for-the-badge&logo=gmail&logoColor=white"/></a>
+</p>
+
+<p align="center">
+  <img src="https://capsule-render.vercel.app/api?type=waving&color=0:8b0000,50:3b0a0a,100:0d0d0d&height=110&section=footer" width="100%"/>
+</p>
